@@ -15,3 +15,34 @@ function StarRating(str) {
 console.log(StarRating(7));
 
 // JAVASCRIPT HACKS
+// 1) Resize an array
+let array = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+
+console.log(array.length);
+
+array.length = 4;
+
+console.log(array.length);
+console.log(array);
+
+// 2) Flatten multidimensional array
+let entries = [1, [2, 5], [6, 7], 9];
+let flat_entries = [].concat(...entries);
+
+console.log(flat_entries);
+
+// 3) Getting the last item in the array
+
+let ARRAY = [1, 2, 3, 4, 5, 6];
+console.log(ARRAY.slice(-3));
+
+// 4) Swap 2 variables without the third variable
+let x = 1;
+let y = 2;
+[x, y] = [y, x];
+console.log(x, y);
+
+// 5) Merging two arrays by optimizing memory
+let array1 = [1, 2, 3];
+let array2 = [4, 5, 6];
+console.log(array1.concat(array2))
